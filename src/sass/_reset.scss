@@ -11,16 +11,20 @@
 html,
 body {
 	height: 100%;
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Young Serif', serif;
 }
 
-*::selection {
-	background-color: $sixth;
-}
+// *::selection {
+// 	background-color: $sixth;
+// }
 
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+}
+
+body {
+	background-color: $background;
 }
 
 a {

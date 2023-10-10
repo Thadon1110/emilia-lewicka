@@ -1,5 +1,93 @@
 @use 'colors' as *;
+@use 'reset' as *;
 
-body {
-	background-color: $primary;
+// font-family: 'Young Serif', serif;
+// font-family: 'Parisienne', cursive;
+// font-family: 'Luckiest Guy', cursive;
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+
+	.wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__back {
+		&-img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20%;
+			z-index: -100;
+		}
+	}
+
+	&__img {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem;
+
+		&-back {
+			position: absolute;
+			top: 55%;
+			left: 46%;
+			transform: translate(-50%, -50%);
+			width: 70%;
+			z-index: -100;
+		}
+
+		&-main {
+			left: 50%;
+			width: 80%;
+		}
+	}
+
+	&__text {
+		position: relative;
+		padding: 2rem;
+
+		h1 {
+			font-size: 3.4rem;
+		}
+
+		h2 {
+			font-size: 2rem;
+		}
+
+		p {
+			font-size: 1.4rem;
+		}
+
+		&-desc {
+			position: absolute;
+			width: 30%;
+			z-index: -100;
+
+			&:nth-child(1) {
+				top: 0;
+				left: 0;
+			}
+
+			&:nth-child(2) {
+				right: 0;
+				bottom: 0;
+			}
+		}
+	}
 }
