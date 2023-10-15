@@ -7,10 +7,24 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Parisienne&family=Young+Serif&display=swap" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/09446dd6c3.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="./dist/css/style.min.css" />
 	</head>
 	<body>
-		<!-- <nav></nav> -->
+		<!-- <nav class="nav">
+			<div class="wrapper">
+				<button class="nav__btn">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+			</div>
+
+			<div class="nav__container">
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+				<a href=""></a>
+			</div>
+		</nav> -->
 
 		<header class="header">
 			<div class="wrapper">
@@ -41,6 +55,8 @@
 
 		<main>
 			<section class="marketing">
+				<!-- @include 'wave_toDark_top.kit'  -->
+
 				<div class="wrapper">
 					<div class="section">
 						<h2>Marketing internetowy</h2>
@@ -48,30 +64,47 @@
 
 					<div class="marketing__container">
 						<div class="marketing__card">
-							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nulla at eaque tempore ducimus id blanditiis laborum natus
-								suscipit atque.
-							</p>
-							<h3>kreaowanie silnej marki</h3>
+							<div class="marketing__card-p">
+								<p>
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nulla at eaque tempore ducimus id blanditiis laborum natus
+									suscipit atque.
+								</p>
+							</div>
+
+							<div class="marketing__card-h">
+								<h3>kreaowanie silnej marki</h3>
+							</div>
 						</div>
 
 						<div class="marketing__card">
-							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nulla at eaque tempore ducimus id blanditiis laborum natus
-								suscipit atque.
-							</p>
-							<h3>kreaowanie silnej marki</h3>
+							<div class="marketing__card-p">
+								<p>
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nulla at eaque tempore ducimus id blanditiis laborum natus
+									suscipit atque.
+								</p>
+							</div>
+
+							<div class="marketing__card-h">
+								<h3>kreaowanie silnej marki</h3>
+							</div>
 						</div>
 
 						<div class="marketing__card">
-							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nulla at eaque tempore ducimus id blanditiis laborum natus
-								suscipit atque.
-							</p>
-							<h3>kreaowanie silnej marki</h3>
+							<div class="marketing__card-p">
+								<p>
+									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nulla at eaque tempore ducimus id blanditiis laborum natus
+									suscipit atque.
+								</p>
+							</div>
+
+							<div class="marketing__card-h">
+								<h3>kreaowanie silnej marki</h3>
+							</div>
 						</div>
 					</div>
 				</div>
+
+				<!-- @include 'wave_toDark_bottom.kit'  -->
 			</section>
 
 			<section class="mark">
@@ -81,17 +114,35 @@
 					</div>
 
 					<div class="mark__container">
-						<div class="mark__quote"></div>
+						<div class="mark__quote">
+							<blockquote>Strategia w biznesie nie jest ważna, jest najważniejsza!</blockquote>
+						</div>
 						<div class="mark__text">
-							<div class="mark__benefits"></div>
+							<div class="mark__benefits">
+								<p>Korzyści z konsultacji</p>
 
-							<div class="mark__desc"></div>
+								<ul>
+									<li>Lepsza organizacja</li>
+									<li>Lepsze planowanie</li>
+									<li>Strategia biznesowa</li>
+									<li>Czas dla siebie</li>
+									<li>Nowy mindset</li>
+								</ul>
+							</div>
+
+							<div class="mark__desc">
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita est accusantium cupiditate blanditiis vitae perferendis odit, natus
+								voluptas in, aliquam officiis quos porro doloremque? Animi accusantium, perferendis ex eligendi, temporibus mollitia tempora adipisci
+								reprehenderit incidunt atque eaque sunt, velit corporis! Quos consequuntur inventore cumque nam eos! Eius eveniet tempore temporibus.
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<section class="projects">
+				<!-- @include 'wave_toBright_top.kit'  -->
+
 				<div class="wrapper">
 					<div class="section">
 						<h2>Projekty graficzne</h2>
@@ -100,9 +151,19 @@
 					<div class="projects__container">
 						<div class="projects__notification"></div>
 
-						<div class="projects__cards"></div>
+						<div class="projects__cards">
+							<div class="projects__card">
+								<img src="./dist/img/card1_1.png" alt="" />
+							</div>
+
+							<div class="projects__card">
+								<img src="./dist/img/card2_1.png" alt="" />
+							</div>
+						</div>
 					</div>
 				</div>
+
+				<!-- @include 'wave_toBright_bottom.kit'  -->
 			</section>
 
 			<section class="contentCreator">
@@ -112,23 +173,88 @@
 					</div>
 
 					<div class="contentCreator__container">
-						<div class="contentCreator__desc"></div>
+						<div class="contentCreator__desc">
+							<p>Szukasz kreatywnego i profesjonalnego content creatora, który pomoże Ci wzmocnić obecność online i wyróżnić się w tłumie?</p>
 
-						<div class="contentCreator__imgs"></div>
+							<br />
+
+							<p>Witaj w moim świecie tworzenia treści!</p>
+						</div>
+
+						<div class="contentCreator__imgs">
+							<img src="./dist/img/3_graphic_min.jpg" alt="" />
+						</div>
+
+						<div class="contentCreator__desc">
+							<p>
+								Analiza profilu oraz analiza konkurencji, Strategia i planowanie treści, Angażująca grafika, Odpowiedni opis, CTA, hasztagi i inne
+								mediowe triki
+							</p>
+						</div>
+
+						<div class="contentCreator__imgs">
+							<img src="./dist/img/4_graphic_min.jpg" alt="" />
+						</div>
+
+						<div class="contentCreator__desc">
+							<p>Wpaść do Ciebie na fotki ciebie i produktów? Ponagrywamy razem? Jasne!</p>
+						</div>
+
+						<div class="contentCreator__imgs">
+							<img src="./dist/img/2_graphic_min.jpg" alt="" />
+						</div>
+
+						<div class="contentCreator__desc">
+							<p>
+								Potrzebujesz swojej profesjonalnej strony internetowej?
+
+								<a href="https://thadon1110.github.io/portfolio/">Wpadnij tutaj <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
 
 			<section class="opinions">
+				<!-- @include 'wave_toDark_top.kit'  -->
+
 				<div class="wrapper">
 					<div class="section">
 						<h2>Opinie</h2>
 					</div>
 
 					<div class="opinions__container">
-						<div class="opinions__opinion"></div>
+						<div class="opinions__opinion">
+							<i class="fa-solid fa-quote-right"></i>
+
+							<p>
+								Emilka jest osobą bardzo sympatyczną, konkretną. Konsultacja była zaprezentowana na wysokim poziomie, a zawarte w niej informacje
+								bardzo rzeczowe i przydatne. Polecam
+							</p>
+						</div>
+
+						<div class="opinions__opinion">
+							<i class="fa-solid fa-quote-right"></i>
+
+							<p>
+								Polecam pracę z Emilką, każdemu kto dopiero zaczyna wchodzenie w świat mediów społecznościowych! Potrafi wytłumaczyć wszystko od zera,
+								wspomina o wszystkich ważnych rzeczach, ale i tych ciekawych. Nasze spotkania przebiegały mega przyjemnie, w luźnej atmosferze.
+								Polecam serdecznie
+							</p>
+						</div>
+
+						<div class="opinions__opinion">
+							<i class="fa-solid fa-quote-right"></i>
+
+							<p>
+								Praca z Emilką była czystą przyjemnością. Wszystko załatwione od ręki, minimalny czas oczekiwania, łatwość w dogadaniu się, idealnie
+								trafiła w mój gust. Polecam bardzo!
+							</p>
+						</div>
 					</div>
 				</div>
+
+				<!-- @include 'wave_toDark_bottom.kit'  -->
 			</section>
 
 			<section class="contact">
@@ -138,9 +264,54 @@
 					</div>
 
 					<div class="contact__container">
-						<div class="contact__form"></div>
+						<div class="contact__form">
+							<p>Darmowa wycena każdego projektu i konsultacji!</p>
 
-						<div class="contact__other"></div>
+							<form action="">
+								<input type="text" id="name" placeholder="Imię..." />
+
+								<input type="text" id="email" placeholder="Twój adres email..." />
+
+								<textarea id="message" placeholder="Wiadomość..."></textarea>
+
+								<button type="submit">Wyślij <i class="fa-regular fa-paper-plane"></i></button>
+							</form>
+						</div>
+
+						<div class="contact__other">
+							<div class="contact__other-title">
+								<p>Czekam na twoją wiadomość!</p>
+							</div>
+
+							<div class="contact__other-media">
+								<div class="contact__other-socials">
+									<div class="contact__other-social">
+										<div>
+											<i class="fa-regular fa-envelope"></i>
+										</div>
+										<div>
+											<p>E-mail</p>
+											<a href="mailto:limia2302@gmail.com">limia2302@gmail.com</a>
+										</div>
+									</div>
+
+									<div class="contact__other-social">
+										<div>
+											<i class="fa-brands fa-instagram"></i>
+										</div>
+										<div class="contact__other-instagram">
+											<p>Instagram</p>
+											<a href="">@limia2302</a>
+											<a href="">@areliastudio</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="contact__other-img">
+									<img src="./dist/img/contact.png" alt="" />
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -151,19 +322,3 @@
 		</footer>
 	</body>
 </html>
-
-<!-- •moje zdjęcie 
-•opis 
-•grafiki na media - karuzela jak komentarze z paradise (jak post na insta)
-•logo, wizytówki, kartki 
-•opinie 
-•kontakt -->
-
-<!-- Kinga
-Emilka jest osobą bardzo sympatyczną, konkretną. Konsultacja była zaprezentowana na wysokim poziomie, a zawarte w niej informacje bardzo rzeczowe i przydatne. Polecam
-
-Kasia
-Polecam pracę z Emilką, każdemu kto dopiero zaczyna wchodzenie w świat mediów społecznościowych! Potrafi wytłumaczyć wszystko od zera, wspomina o wszystkich ważnych rzeczach, ale i tych ciekawych. Nasze spotkania przebiegały mega przyjemnie, w luźnej atmosferze. Polecam serdecznie
-
-Maja
-Praca z Emilką była czystą przyjemnością. Wszystko załatwione od ręki, minimalny czas oczekiwania, łatwość w dogadaniu się, idealnie trafiła w mój gust. Polecam bardzo! -->
