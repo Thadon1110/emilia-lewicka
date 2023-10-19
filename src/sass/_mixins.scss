@@ -1,1 +1,11 @@
 @use 'colors' as *;
+
+@mixin expandWrapperS {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+@mixin expandWrapperL {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
