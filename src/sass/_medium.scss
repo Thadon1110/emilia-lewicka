@@ -33,12 +33,6 @@
 		}
 	}
 
-	.marketing {
-		.wrapper {
-			@include expandWrapperL;
-		}
-	}
-
 	.mark {
 		&__text {
 			flex-direction: row;
@@ -61,10 +55,6 @@
 	}
 
 	.projects {
-		.wrapper {
-			@include expandWrapperL;
-		}
-
 		&__card {
 			width: 70%;
 		}
@@ -73,12 +63,6 @@
 	// .contentCreator {
 	//
 	// }
-
-	.opinions {
-		.wrapper {
-			@include expandWrapperL;
-		}
-	}
 
 	.contact {
 		&__container {

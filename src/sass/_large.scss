@@ -2,9 +2,21 @@
 @use 'mixins' as *;
 
 @media (min-width: 992px) {
-	
+	.contact {
+		&__other {
+			width: 50%;
+
+			&-img {
+				display: block;
+				// width: 50%;
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1400px) {
-	
 }
