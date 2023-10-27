@@ -104,6 +104,8 @@
 			top: 2%;
 			left: 0;
 			width: 20%;
+			animation: 8s infinite scaleManipulation;
+			animation-delay: -4s;
 			z-index: -100;
 		}
 	}
@@ -165,7 +167,7 @@
 			&:nth-child(1) {
 				top: 0;
 				left: 0;
-				animation-delay: -2.5s;
+				animation-delay: -2s;
 			}
 
 			&:nth-child(2) {
