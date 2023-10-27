@@ -509,6 +509,11 @@
 				border-radius: 8px;
 				background-color: $backgroundSecond;
 				color: $black;
+				transition: background-color 0.3s;
+
+				&:hover {
+					background-color: $primary;
+				}
 			}
 		}
 	}
