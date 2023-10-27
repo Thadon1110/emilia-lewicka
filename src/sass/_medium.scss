@@ -2,7 +2,13 @@
 @use 'mixins' as *;
 
 @media (min-width: 772px) {
+	.section {
+		font-size: 3rem;
+	}
+
 	.header {
+		padding: 10rem 0;
+
 		.wrapper {
 			flex-direction: row;
 			justify-content: center;
@@ -33,11 +39,28 @@
 		}
 	}
 
+	.marketing {
+		&__card {
+			p {
+				font-size: 1.5rem;
+			}
+
+			h3 {
+				font-size: 2rem;
+			}
+		}
+	}
+
 	.mark {
+		&__quote {
+			font-size: 1.5rem;
+		}
+
 		&__text {
 			flex-direction: row;
 			align-items: flex-start;
 			width: 90%;
+			font-size: 1.7rem;
 		}
 
 		&__benefits {
@@ -47,6 +70,14 @@
 			justify-content: start;
 			align-items: center;
 			width: 45%;
+
+			p {
+				&::before {
+					top: -260%;
+					left: -8%;
+					font-size: 13rem;
+				}
+			}
 		}
 
 		&__desc {
@@ -60,17 +91,58 @@
 		}
 	}
 
-	// .contentCreator {
-	//
-	// }
+	.contentCreator {
+		&__desc {
+			font-size: 1.7rem;
+		}
+	}
+
+	.opinions {
+		&__opinion {
+			max-width: 500px;
+			font-size: 1.7rem;
+
+			i {
+				font-size: 3.8rem;
+			}
+		}
+	}
 
 	.contact {
+		margin: 4rem 0 3rem;
+
 		&__container {
 			flex-direction: row;
 		}
 
 		&__form {
 			order: 0;
+
+			p {
+				font-size: 2rem;
+			}
+
+			form {
+				font-size: 1.7rem;
+			}
+		}
+
+		&__other {
+			&-title {
+				p {
+					font-size: 1.9rem;
+				}
+			}
+
+			&-socials {
+				font-size: 1.7rem;
+			}
+
+			&-social {
+				i {
+					font-size: 3.4rem;
+				}
+			}
 		}
 	}
 }

@@ -2,21 +2,185 @@
 @use 'mixins' as *;
 
 @media (min-width: 992px) {
-	.contact {
-		&__other {
-			width: 50%;
+	.section {
+		font-size: 4rem;
+	}
 
-			&-img {
-				display: block;
-				// width: 50%;
+	.header {
+		&__img {
+			&-back {
+				width: 90%;
+			}
 
-				img {
-					width: 100%;
+			&-main {
+				width: 90%;
+			}
+		}
+
+		&__text {
+			h1 {
+				font-size: 4.2rem; // 3.4
+			}
+
+			h2 {
+				font-size: 2.4rem;
+			}
+
+			p {
+				font-size: 1.7rem;
+			}
+		}
+	}
+
+	.mark {
+		&__quote {
+			font-size: 1.9rem;
+		}
+
+		&__text {
+			font-size: 2rem;
+		}
+
+		&__benefits {
+			p {
+				&::before {
+					top: -240%;
+					font-size: 14rem;
 				}
 			}
+		}
+	}
+
+	.contentCreator {
+		&__desc {
+			font-size: 2rem;
+		}
+	}
+
+	.opinions {
+		&__opinion {
+			font-size: 2rem;
+
+			i {
+				font-size: 4rem;
+			}
+		}
+	}
+
+	.contact {
+		&__form {
+			p {
+				font-size: 2.2rem;
+			}
+
+			form {
+				font-size: 2rem;
+			}
+		}
+
+		&__other {
+			&-title {
+				p {
+					font-size: 2.2rem;
+				}
+			}
+
+			&-socials {
+				font-size: 2rem;
+			}
+
+			&-social {
+				i {
+					font-size: 3.7rem;
+				}
+			}
+
+			// &-img {
+			// 	display: block;
+			// 	width: 50%;
+
+			// 	img {
+			// 		width: 100%;
+			// 	}
+			// }
 		}
 	}
 }
 
 @media (min-width: 1400px) {
+	.section {
+		font-size: 5rem;
+	}
+
+	.header {
+		&__img {
+			&-back {
+				width: 100%;
+			}
+
+			&-main {
+				width: 100%;
+			}
+		}
+
+		&__text {
+			h1 {
+				font-size: 5rem;
+			}
+
+			h2 {
+				font-size: 3rem;
+			}
+
+			p {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	.mark {
+		&__quote {
+			font-size: 2.1rem;
+		}
+
+		&__text {
+			width: 100%;
+			font-size: 2.4rem;
+		}
+
+		&__benefits {
+			p {
+				&::before {
+					top: -210%;
+					font-size: 15rem;
+				}
+			}
+		}
+	}
+
+	.marketing {
+		&__card {
+			max-width: 400px;
+
+			p {
+				font-size: 1.8rem;
+			}
+
+			h3 {
+				font-size: 2.4rem;
+			}
+		}
+	}
+
+	.projects {
+		&__card {
+			width: 80%;
+		}
+	}
+
+	.contentCreator {
+		&__desc {
+			font-size: 2.4rem;
+		}
+	}
 }
