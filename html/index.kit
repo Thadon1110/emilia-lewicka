@@ -1,9 +1,22 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl-PL">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Emilia Lewicka</title>
+		<title>Emilia Lewicka - Portfolio</title>
+		<meta name="author" content="Thadon1110" />
+		<meta name="description" content="The MDN Web Docs Learning Area aims to provide complete beginners to the Web with all they need to know to get started with developing websites and applications." />
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<!-- <base href="https://github.com/Thadon1110/emilia-lewicka" target="_blank"> -->
+
+		<meta property="og:title" content="Emilia Lewicka - Portfolio" />
+		<meta property="og:description" content="The Mozilla Developer Network (MDN) provides information about Open Web technologies including HTML, CSS, and APIs for both websites and HTML Apps." />
+		<meta property="og:image" content="https://developer.mozilla.org/mdn-social-share.png" />
+		<meta property="og:type" content="portfolio">
+
+		<meta name="twitter:title" content="Emilia Lewicka - Portfolio" />
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Parisienne&family=Young+Serif&display=swap" rel="stylesheet" />
@@ -60,7 +73,7 @@
 
 		<main>
 			<section class="marketing">
-				<!-- @include 'wave_toDark_top.kit'  -->
+				<!-- @include 'wave_toBright_top.kit'  -->
 
 				<div class="wrapper">
 					<div class="section">
@@ -109,7 +122,7 @@
 					</div>
 				</div>
 
-				<!-- @include 'wave_toDark_bottom.kit'  -->
+				<!-- @include 'wave_toBright_bottom.kit'  -->
 			</section>
 
 			<section class="mark">
@@ -159,15 +172,15 @@
 						<div class="projects__cards">
 							<div class="projects__card">
 								<div class="projects__card-inside">
-									<img class="card1_1" src="./dist/img/card1_1.png" alt="Przód wizytówki Magia Aparatu" />
-									<img class="card1_2" src="./dist/img/card1_2.png" alt="Tył wizytówki Magia Aparatu" />
+									<img class="card1_1" src="./dist/img/projects/card1_1.png" alt="Przód wizytówki Magia Aparatu" />
+									<img class="card1_2" src="./dist/img/projects/card1_2.png" alt="Tył wizytówki Magia Aparatu" />
 								</div>
 							</div>
 
 							<div class="projects__card">
 								<div class="projects__card-inside">
-									<img class="card1_1" src="./dist/img/card2_1.png" alt="Przód wizytówki Candle" />
-									<img class="card1_2" src="./dist/img/card2_2.png" alt="Tył wizytówki Candle" />
+									<img class="card1_1" src="./dist/img/projects/card2_1.png" alt="Przód wizytówki Candle" />
+									<img class="card1_2" src="./dist/img/projects/card2_2.png" alt="Tył wizytówki Candle" />
 								</div>
 							</div>
 						</div>
@@ -213,16 +226,16 @@
 						</div>
 
 						<div class="contentCreator__imgs">
-							<img src="./dist/img/3_graphic_min.jpg" alt="" />
-							<img src="./dist/img/4_graphic_min.jpg" alt="" />
-							<img src="./dist/img/2_graphic_min.jpg" alt="" />
+							<img src="./dist/img/contentCreator/3_graphic_min.jpg" alt="" />
+							<img src="./dist/img/contentCreator/4_graphic_min.jpg" alt="" />
+							<img src="./dist/img/contentCreator/2_graphic_min.jpg" alt="" />
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<section class="opinions">
-				<!-- @include 'wave_toDark_top.kit'  -->
+				<!-- @include 'wave_toBright_top.kit'  -->
 
 				<div class="wrapper">
 					<div class="section">
@@ -260,7 +273,7 @@
 					</div>
 				</div>
 
-				<!-- @include 'wave_toDark_bottom.kit'  -->
+				<!-- @include 'wave_toBright_bottom.kit'  -->
 			</section>
 
 			<section class="contact">
@@ -273,12 +286,15 @@
 						<div class="contact__form">
 							<p>Darmowa wycena każdego projektu i konsultacji!</p>
 
-							<form action="">
+							<form action="mail.php" method="post">
 								<input type="text" id="name" placeholder="Imię..." />
+								<p class="contact__form-error">Imię</p>
 
 								<input type="text" id="email" placeholder="Twój adres email..." />
+								<p class="contact__form-error">Email</p>
 
 								<textarea id="message" placeholder="Wiadomość..."></textarea>
+								<p class="contact__form-error">Wiadomość</p>
 
 								<button type="submit">Wyślij <i class="fa-regular fa-paper-plane"></i></button>
 							</form>
@@ -326,5 +342,7 @@
 		<footer class="footer">
 			<p class="footer__copyright">&copy; <span class="footer__copyright-year">2023</span> Emilia Lewicka - All rights Reserved</p>
 		</footer>
+
+		<script src="./dist/js/script.min.js"></script>
 	</body>
 </html>

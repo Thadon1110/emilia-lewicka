@@ -89,6 +89,7 @@
 	align-items: center;
 	min-height: 40%;
 	width: 100%;
+	overflow: hidden;
 
 	.wrapper {
 		position: relative;
@@ -480,6 +481,16 @@
 			text-align: center;
 		}
 
+		&-error {
+			display: none;
+			width: 100%;
+			margin-bottom: 0.5rem;
+			padding-left: 1rem;
+			font-size: 1rem;
+			text-align-last: left;
+			color: $primaryDarker;
+		}
+
 		form {
 			display: flex;
 			flex-direction: column;
@@ -496,6 +507,10 @@
 				border-radius: 8px;
 				border: none;
 
+				&:first-child {
+					margin-top: 2rem;
+				}
+
 				&::placeholder {
 					font-style: italic;
 				}
@@ -504,10 +519,15 @@
 					-webkit-transition: background-color 600000s 0s, color 600000s 0s;
 					transition: background-color 600000s 0s, color 600000s 0s;
 				}
+
+				&:focus {
+					outline: 2px solid $primary;
+				}
 			}
 
 			button {
 				padding: 0.8rem;
+				margin-top: 1rem;
 				border-radius: 8px;
 				background-color: $backgroundSecond;
 				color: $black;
