@@ -88,12 +88,26 @@
 	.projects {
 		&__card {
 			width: 70%;
+			max-width: 500px;
 		}
 	}
 
 	.contentCreator {
 		&__desc {
 			font-size: 1.7rem;
+		}
+
+		&__imgs {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+
+			img {
+				width: 90%;
+				margin: 2rem;
+			}
 		}
 	}
 
@@ -124,6 +138,10 @@
 
 			form {
 				font-size: 1.7rem;
+			}
+
+			.error-text {
+				font-size: 1.4rem;
 			}
 		}
 

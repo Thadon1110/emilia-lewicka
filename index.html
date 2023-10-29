@@ -3,10 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>Emilia Lewicka - Portfolio</title>
+		
 		<meta name="author" content="Thadon1110" />
 		<meta name="description" content="The MDN Web Docs Learning Area aims to provide complete beginners to the Web with all they need to know to get started with developing websites and applications." />
-		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="keywords" content="Media, Social Media, Content Creator, Marketing, Rozwój osobisty, Rozwój marki, Silna Marka, Kreowanie Silnej Marki, Marketing Internetowy, Silna Marka, Strategia w biznesie, Biznes Online">
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<!-- <base href="https://github.com/Thadon1110/emilia-lewicka" target="_blank"> -->
 
@@ -56,6 +58,11 @@
 	></path>
 </svg>
 
+		</div>
+
+		<div class="popup">
+			<p>Wiadomość wysłana poprawnie!</p>
+			<button class="close">OK <i class="fa-solid fa-check"></i></button>
 		</div>
 
 		<!-- <nav class="nav">
@@ -373,7 +380,8 @@
 						<div class="contentCreator__imgs">
 							<img src="./dist/img/contentCreator/3_graphic_min.jpg" alt="" />
 							<img src="./dist/img/contentCreator/4_graphic_min.jpg" alt="" />
-							<img src="./dist/img/contentCreator/2_graphic_min.jpg" alt="" />
+							<img src="./dist/img/contentCreator/1_graphic_min.jpg" alt="" />
+							<img src="./dist/img/contentCreator/7_graphic_min.jpg" alt="" />
 						</div>
 					</div>
 				</div>
@@ -489,17 +497,25 @@
 						<div class="contact__form">
 							<p>Darmowa wycena każdego projektu i konsultacji!</p>
 
-							<form action="mail.php" method="post">
-								<input type="text" id="name" placeholder="Imię..." />
-								<p class="contact__form-error">Imię</p>
+							<form action="./dist/php/mail.php" method="post">
+								<div class='contact__form-box'>
+									<input class='contact__form-input' type="text" name="name" id="name" placeholder="Imię..." />
+									<p class="error-text">Imię</p>
+								</div>
+								
+								<div class='contact__form-box'>
+									<input class='contact__form-input' type="text" name="email" id="email" placeholder="Email..." />
+									<p class="error-text">Email</p>
+								</div>
 
-								<input type="text" id="email" placeholder="Twój adres email..." />
-								<p class="contact__form-error">Email</p>
+								<div class='contact__form-box'>
+									<textarea class='contact__form-input' name="message" id="message" placeholder="Wiadomość..."></textarea>
+									<p class="error-text">Wiadomość</p>
+								</div>
 
-								<textarea id="message" placeholder="Wiadomość..."></textarea>
-								<p class="contact__form-error">Wiadomość</p>
+								
 
-								<button type="submit">Wyślij <i class="fa-regular fa-paper-plane"></i></button>
+								<button class="contact__form-button" type="submit">Wyślij <i class="fa-regular fa-paper-plane"></i></button>
 							</form>
 						</div>
 
@@ -546,6 +562,6 @@
 			<p class="footer__copyright">&copy; <span class="footer__copyright-year">2023</span> Emilia Lewicka - All rights Reserved</p>
 		</footer>
 
-		<script src="./dist/js/script.min.js"></script>
+		<script src="./dist/js/email.min.js"></script>
 	</body>
 </html>
