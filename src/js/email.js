@@ -61,12 +61,12 @@ const checkErrors = () => {
 };
 
 sendBtn.addEventListener('click', (e) => {
-	// e.preventDefault();
-	// checkForm([username, email, content]);
-	// checkLength(username, 2);
-	// checkLength(content, 20);
-	// checkMail(email);
-	// checkErrors();
+	e.preventDefault();
+	checkForm([username, email, content]);
+	checkLength(username, 2);
+	checkLength(content, 20);
+	checkMail(email);
+	checkErrors();
 });
 
 popupClose.addEventListener('click', () => {
